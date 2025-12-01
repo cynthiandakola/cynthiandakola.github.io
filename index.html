@@ -1229,8 +1229,14 @@
             <ul class="contact-list">
               <li>
                 <span class="contact-label">Email</span>
-                <a href="mailto:your.email@example.com">cynthia@cynthiandakola.com</a>
-              </li>
+<a id="cm" href="#">[email protected]</a>
+<script>
+  const u = "cynthia";
+  const d = "cynthiandakola.com";
+  const a = document.getElementById("cm");
+  a.href = "mailto:" + u + "@" + d;
+  a.textContent = u + "@" + d;
+</script>              </li>
               <li>
                 <span class="contact-label">LinkedIn</span>
                 <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">

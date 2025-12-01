@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cynthia Ndakola – Junior Digital Marketing Specialist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio and CV of junior digital marketing specialist Cynthia Ndakola.">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-alt: #111827;
+      --card: #020617;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --radius-lg: 16px;
+      --radius-full: 999px;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.75);
+      --shadow-subtle: 0 10px 30px rgba(15, 23, 42, 0.6);
+      --max-width: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1e293b 0, #020617 55%, #020617 100%);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(to bottom, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.9));
+      border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid rgba(148, 163, 184, 0.6);
+      background: radial-gradient(circle at 30% 20%, #fca5a5, #1e293b 50%, #020617 100%);
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.8), 0 18px 35px rgba(0, 0, 0, 0.6);
+    }
+
+    .nav-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .nav-subtitle {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 1rem;
+      font-size: 0.85rem;
+    }
+
+    nav a {
+      padding: 0.4rem 0.9rem;
+      border-radius: var(--radius-full);
+      border: 1px solid transparent;
+      background: transparent;
+      text-decoration: none;
+      colour: var(--text);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    nav a span.dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0;
+      transform: scale(0.5);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+    }
+
+    nav a:hover span.dot,
+    nav a:focus-visible span.dot {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: rgba(15, 23, 42, 0.8);
+      border-color: rgba(55, 65, 81, 0.9);
+      outline: none;
+    }
+
+    .primary-btn {
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(56, 189, 248, 0.6);
+      background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.32), rgba(56, 189, 248, 0.08));
+      colour: var(--text);
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      text-decoration: none;
+      box-shadow: 0 14px 40px rgba(8, 47, 73, 0.7);
+      transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+    }
+
+    .primary-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 50px rgba(8, 47, 73, 0.9);
+      border-color: rgba(56, 189, 248, 0.95);
+      text-decoration: none;
+    }
+
+    .primary-btn-icon {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .hero {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 1.5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.6fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .hero-intro {
+      position: relative;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(55, 65, 81, 0.8);
+      box-shadow: var(--shadow-subtle);
+      font-size: 0.75rem;
+      colour: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
+    }
+
+    .hero h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 3vw + 1rem, 2.6rem);
+      letter-spacing: 0.03em;
+    }
+
+    .hero-role {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      colour: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      margin: 0 0 1.5rem;
+      colour: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.65;
+      max-width: 32rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: centre;
+    }
+
+    .ghost-btn {
+      padding: 0.5rem 0.9rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+      font-size: 0.85rem;
+      colour: var(--muted);
+      display: inline-flex;
+      align-items: centre;
+      gap: 0.45rem;
+      text-decoration: none;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.8);
+    }
+
+    .ghost-btn:hover {
+      border-color: rgba(75, 85, 99, 1);
+      text-decoration: none;
+      colour: var(--text);
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: 1.4rem;
+      margin-top: 1.6rem;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      font-size: 0.8rem;
+      colour: var(--muted);
+    }
+
+    .meta-label {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      display: block;
+      margin-bottom: 0.25rem;
+      colour: #6b7280;
+    }
+
+    .hero-panel {
+      position: relative;
+      border-radius: var(--radius-lg);
+      background: radial-gradient(circle at top, #1f2937, #020617 55%, #020617 100%);
+      border: 1px solid rgba(31, 41, 55, 0.98);
+      padding: 1.4rem 1.4rem 1.5rem;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    .hero-panel-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: centre;
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+    }
+
+    .hero-pill {
+      padding: 0.2rem 0.7rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+      colour: var(--muted);
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      font-size: 0.7rem;
+      justify-content: flex-end;
+    }
+
+    .tag {
+      padding: 0.18rem 0.6rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(51, 65, 85, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+      colour: #e5e7eb;
+    }
+
+    .status-card {
+      border-radius: 14px;
+      border: 1px solid rgba(37, 99, 235, 0.5);
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.1), rgba(15, 23, 42, 0.95));
+      padding: 0.9rem 0.9rem;
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+      gap: 0.75rem;
+      align-items: centre;
+    }
+
+    .status-label {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.7rem;
+      colour: #bae6fd;
+      margin-bottom: 0.25rem;
+    }
+
+    .status-main {
+      colour: #e0f2fe;
+      font-weight: 500;
+      margin-bottom: 0.15rem;
+    }
+
+    .status-sub {
+      colour: #93c5fd;
+      font-size: 0.75rem;
+    }
+
+    .status-metrics {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .metric {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      colour: #bfdbfe;
+    }
+
+    .metric-label {
+      font-size: 0.72rem;
+    }
+
+    .metric-value {
+      font-size: 0.72rem;
+      colour: #e0f2fe;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.6rem;
+    }
+
+    .mini-card {
+      border-radius: 12px;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+      background: rgba(15, 23, 42, 0.98);
+      padding: 0.7rem 0.75rem;
+      font-size: 0.72rem;
+      colour: var(--muted);
+    }
+
+    .mini-label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 0.7rem;
+      colour: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    .mini-value {
+      colour: #e5e7eb;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.3rem;
+    }
+
+    .tiny-pill {
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      padding: 0.05rem 0.45rem;
+      font-size: 0.65rem;
+      colour: #9ca3af;
+    }
+
+    .section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.2rem 1.5rem 0.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+      margin-bottom: 1.3rem;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      colour: #9ca3af;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      colour: var(--muted);
+      max-width: 32rem;
+    }
+
+    .section-chip {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: var(--radius-full);
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      colour: var(--muted);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.6fr);
+      gap: 1.6rem;
+      align-items: flex-start;
+    }
+
+    .card {
+      background: var(--bg-alt);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 1.4rem 1.5rem;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.7rem;
+      font-size: 1rem;
+    }
+
+    .card p {
+      margin: 0 0 0.8rem;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      colour: var(--muted);
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+
+    .pill {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(2, 6, 23, 0.9);
+      colour: #d1d5db;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.2fr);
+      gap: 1.4rem;
+    }
+
+    .project-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 1.3rem 1.4rem 1.3rem;
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .project-meta-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.6rem;
+      font-size: 0.75rem;
+      colour: var(--muted);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: centre;
+      gap: 0.3rem;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      font-size: 0.72rem;
+      background: rgba(15, 23, 42, 0.95);
+      colour: #e5e7eb;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .project-title {
+      font-size: 0.98rem;
+      margin: 0;
+    }
+
+    .project-summary {
+      font-size: 0.88rem;
+      colour: var(--muted);
+      margin: 0;
+    }
+
+    .project-list {
+      margin: 0.2rem 0 0.3rem 0;
+      padding-left: 1.05rem;
+      font-size: 0.85rem;
+      colour: var(--muted);
+    }
+
+    .project-list li {
+      margin-bottom: 0.15rem;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.2rem;
+    }
+
+    .project-tag {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(51, 65, 85, 0.9);
+      colour: #9ca3af;
+    }
+
+    .project-link-row {
+      margin-top: 0.3rem;
+      font-size: 0.8rem;
+    }
+
+    .project-link-row a {
+      text-decoration: underline;
+    }
+
+    .resume-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.4fr);
+      gap: 1.4rem;
+      align-items: flex-start;
+    }
+
+    .resume-note {
+      font-size: 0.85rem;
+      colour: var(--muted);
+      margin-top: 0.4rem;
+    }
+
+    .resume-btn {
+      display: inline-flex;
+      align-items: centre;
+      gap: 0.5rem;
+      padding: 0.6rem 1.1rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(56, 189, 248, 0.7);
+      background: rgba(8, 47, 73, 0.8);
+      colour: #e5e7eb;
+      font-size: 0.85rem;
+      text-decoration: none;
+      box-shadow: 0 14px 40px rgba(8, 47, 73, 0.8);
+    }
+
+    .resume-btn:hover {
+      text-decoration: none;
+      border-color: rgba(56, 189, 248, 1);
+    }
+
+    .timeline {
+      border-left: 1px dashed rgba(55, 65, 81, 0.9);
+      padding-left: 1rem;
+      margin-left: 0.3rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 0.7rem;
+    }
+
+    .timeline-role {
+      font-size: 0.86rem;
+    }
+
+    .timeline-meta {
+      font-size: 0.78rem;
+      colour: var(--muted);
+    }
+
+    .timeline-bullet {
+      font-size: 0.8rem;
+      colour: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    .extras-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.4fr);
+      gap: 1.4rem;
+    }
+
+    .extras-list {
+      font-size: 0.88rem;
+      colour: var(--muted);
+      margin: 0.2rem 0 0.3rem 0;
+      padding-left: 1.1rem;
+    }
+
+    .extras-list li {
+      margin-bottom: 0.2rem;
+    }
+
+    .quote {
+      font-size: 0.95rem;
+      colour: #e5e7eb;
+      margin: 0 0 0.8rem;
+    }
+
+    .quote-meta {
+      font-size: 0.8rem;
+      colour: var(--muted);
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.4fr);
+      gap: 1.4rem;
+      align-items: flex-start;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.4rem 0 0;
+      font-size: 0.9rem;
+      colour: var(--muted);
+    }
+
+    .contact-list li {
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-label {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      colour: #6b7280;
+    }
+
+    .contact-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.5rem;
+    }
+
+    .contact-chip {
+      font-size: 0.75rem;
+      padding: 0.22rem 0.7rem;
+      border-radius: 999px;
+      border: 1px dashed rgba(55, 65, 81, 0.9);
+      colour: var(--muted);
+    }
+
+    .contact-card {
+      border-radius: var(--radius-lg);
+      border: 1px dashed rgba(55, 65, 81, 1);
+      background: rgba(15, 23, 42, 0.9);
+      padding: 1.2rem 1.3rem;
+      font-size: 0.86rem;
+      colour: var(--muted);
+    }
+
+    .contact-card label {
+      display: block;
+      font-size: 0.8rem;
+      margin-bottom: 0.25rem;
+      colour: #9ca3af;
+    }
+
+    .contact-card input,
+    .contact-card textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.95);
+      padding: 0.45rem 0.6rem;
+      font-size: 0.85rem;
+      colour: #e5e7eb;
+      margin-bottom: 0.65rem;
+      font-family: inherit;
+    }
+
+    .contact-card textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .contact-card input:focus,
+    .contact-card textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.5);
+    }
+
+    .contact-card button {
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(55, 65, 81, 1);
+      padding: 0.55rem 1.1rem;
+      background: rgba(15, 23, 42, 0.96);
+      colour: #e5e7eb;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .contact-card button:hover {
+      border-color: rgba(75, 85, 99, 1);
+    }
+
+    footer {
+      border-top: 1px solid rgba(15, 23, 42, 0.95);
+      padding: 1rem 1.5rem 1.4rem;
+      font-size: 0.78rem;
+      colour: var(--muted);
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: centre;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 840px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+        padding-top: 1.7rem;
+      }
+      .hero-panel {
+        order: -1;
+      }
+      .about-grid,
+      .projects-grid,
+      .resume-layout,
+      .extras-grid,
+      .contact-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .nav-inner {
+        flex-wrap: wrap;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      header {
+        position: static;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .nav-inner {
+        padding-inline: 1rem;
+      }
+      .hero,
+      .section {
+        padding-inline: 1rem;
+      }
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero-meta {
+        flex-direction: column;
+      }
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="nav-inner">
+        <div class="nav-brand">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <div class="nav-title">Cynthia Ndakola</div>
+            <div class="nav-subtitle">Junior Digital Marketing Specialist</div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about"><span class="dot"></span> About</a></li>
+            <li><a href="#projects"><span class="dot"></span> Projects</a></li>
+            <li><a href="#resume"><span class="dot"></span> CV</a></li>
+            <li><a href="#extras"><span class="dot"></span> Extras</a></li>
+            <li><a href="#contact"><span class="dot"></span> Contact</a></li>
+            <li>
+              <a href="#contact" class="primary-btn">
+                <span class="primary-btn-icon">✉️</span>
+                Hire me
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-intro">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>Open to junior digital marketing roles in Europe</span>
+          </div>
+          <p id="hero-title" class="hero-role">Digital marketing • Content • Social • SEO • Analytics</p>
+          <h1>Turning ideas into clear, measurable digital stories.</h1>
+          <p>
+            I am a junior digital marketing specialist with a background in childcare and a recent master’s in digital marketing.
+            I enjoy connecting data with creativity to improve content performance across social campaigns, websites, and email.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="primary-btn">
+              <span class="primary-btn-icon">⬇</span>
+              View case studies
+            </a>
+            <a href="#resume" class="ghost-btn">
+              <span>Download CV</span>
+            </a>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-label">Based in</span>
+              <span>Cologne, Germany (open to hybrid / remote)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Focus areas</span>
+              <span>Content, social media, SEO, basic analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Current availability and snapshot">
+          <div class="hero-panel-top">
+            <div class="hero-pill">Availability · Updated 2025</div>
+            <div class="hero-tags">
+              <span class="tag">Part-time or full-time</span>
+              <span class="tag">Junior level</span>
+            </div>
+          </div>
+
+          <div class="status-card">
+            <div>
+              <div class="status-label">Status</div>
+              <div class="status-main">Actively looking for a junior digital marketing role</div>
+              <div class="status-sub">
+                Ready to support content, social channels, and campaigns while growing into a more strategic role.
+              </div>
+            </div>
+            <div class="status-metrics">
+              <div class="metric">
+                <span class="metric-label">Earliest start</span>
+                <span class="metric-value">From [Month] 2025</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Preferred location</span>
+                <span class="metric-value">Germany / Netherlands / remote EU</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Languages</span>
+                <span class="metric-value">English (fluent), German (learning)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-grid">
+            <div class="mini-card">
+              <span class="mini-label">Strengths</span>
+              <span class="mini-value">Clear messaging, structured thinking, visual sense</span>
+              <div class="pill-row">
+                <span class="tiny-pill">Storytelling</span>
+                <span class="tiny-pill">Organisation</span>
+                <span class="tiny-pill">Reliability</span>
+              </div>
+            </div>
+            <div class="mini-card">
+              <span class="mini-label">Tools</span>
+              <span class="mini-value">Canva, Meta Business Suite, Google Analytics, Mailchimp</span>
+            </div>
+            <div class="mini-card">
+              <span class="mini-label">Looking for</span>
+              <span class="mini-value">A team where I can learn from senior marketers and handle real campaigns from day one.</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="section-header">
+          <div>
+            <div class="section-title">About me</div>
+            <p class="section-subtitle">
+              A short overview of who I am as a person and as a professional.
+            </p>
+          </div>
+          <div class="section-chip">Individual · Professional</div>
+        </div>
+
+        <div class="about-grid">
+          <article class="card">
+            <h3>Who I am</h3>
+            <p>
+              I recently completed an intensive digital marketing programme and a master’s degree in digital marketing.
+              Before that I worked as a childcare specialist, which helped me settle in Europe and build strong communication
+              and responsibility skills.
+            </p>
+            <p>
+              My focus is now fully on digital work. I enjoy understanding audiences, planning content, and keeping projects
+              organised so campaigns go out on time and match the brand.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>How I work</h3>
+            <p>
+              I like clear briefs, simple workflows, and honest feedback. I am comfortable taking ownership of tasks,
+              asking questions when needed, and documenting what I have done so others can follow.
+            </p>
+            <div class="pill-list">
+              <span class="pill">Calm and reliable</span>
+              <span class="pill">Detail-focused</span>
+              <span class="pill">Enjoys routines and checklists</span>
+              <span class="pill">Learns by doing</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-header">
+          <div>
+            <div class="section-title">Projects</div>
+            <p class="section-subtitle">
+              A selection of case studies showing how I approach content, social media, and basic performance analysis.
+            </p>
+          </div>
+          <div class="section-chip">3–5 focused case studies</div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-meta-row">
+              <span class="badge">
+                <span class="badge-dot"></span>
+                Social campaign
+              </span>
+              <span>Student project · 2025</span>
+            </div>
+            <h3 class="project-title">Awareness campaign for a sustainable fashion brand</h3>
+            <p class="project-summary">
+              Planned and executed a 4-week Instagram campaign for a fictional sustainable fashion label focused on
+              increasing brand awareness and profile visits.
+            </p>
+            <ul class="project-list">
+              <li>Created content calendar with 3 posts per week plus Stories.</li>
+              <li>Wrote captions and designed visual templates in Canva.</li>
+              <li>Defined basic KPIs and tracked performance in a simple dashboard.</li>
+            </ul>
+            <p class="project-summary">
+              Result: simulated +35% profile visits and +20% follower growth compared with the baseline scenario in the brief.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Instagram</span>
+              <span class="project-tag">Content calendar</span>
+              <span class="project-tag">Brand awareness</span>
+              <span class="project-tag">Canva</span>
+            </div>
+            <div class="project-link-row">
+              <a href="#" aria-label="View case study deck (PDF)">View case study (PDF)</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta-row">
+              <span class="badge">
+                <span class="badge-dot"></span>
+                Website & SEO
+              </span>
+              <span>Student project · 2025</span>
+            </div>
+            <h3 class="project-title">Improving visibility for a local wellness studio</h3>
+            <p class="project-summary">
+              Analysed the website of a small wellness studio and created a plan to improve clarity, structure, and search visibility.
+            </p>
+            <ul class="project-list">
+              <li>Mapped current pages and identified missing information for users.</li>
+              <li>Restructured navigation and wrote clearer page copy (Homepage, Services, Contact).</li>
+              <li>Researched basic keywords and suggested on-page improvements.</li>
+            </ul>
+            <p class="project-summary">
+              Result: test implementation in the course increased time on page and reduced bounce rate in the simulation.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Information architecture</span>
+              <span class="project-tag">Copywriting</span>
+              <span class="project-tag">On-page SEO</span>
+            </div>
+            <div class="project-link-row">
+              <a href="#" aria-label="View project write-up">Read project write-up</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta-row">
+              <span class="badge">
+                <span class="badge-dot"></span>
+                Email & analytics
+              </span>
+              <span>Student project · 2025</span>
+            </div>
+            <h3 class="project-title">Welcome email flow for a boutique brand</h3>
+            <p class="project-summary">
+              Designed a simple three-email welcome sequence for a boutique brand, including basic segmentation and A/B test ideas.
+            </p>
+            <ul class="project-list">
+              <li>Defined email goals (introduce brand, highlight offer, invite to follow on Instagram).</li>
+              <li>Wrote subject lines, preview texts, and body copy in a consistent tone.</li>
+              <li>Set up tracking plan for open rate and click-through rate.</li>
+            </ul>
+            <p class="project-summary">
+              Result: in the simulation, the improved flow reached a higher click-through rate than the original single welcome email.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Email marketing</span>
+              <span class="project-tag">Copywriting</span>
+              <span class="project-tag">A/B testing ideas</span>
+            </div>
+            <div class="project-link-row">
+              <a href="#" aria-label="Download email flow PDF">Download email flow (PDF)</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta-row">
+              <span class="badge">
+                <span class="badge-dot"></span>
+                Content & reporting
+              </span>
+              <span>Ongoing</span>
+            </div>
+            <h3 class="project-title">Personal learning and content practice</h3>
+            <p class="project-summary">
+              I keep practising by creating sample posts, analysing brands I like, and documenting what I learn about digital marketing.
+            </p>
+            <ul class="project-list">
+              <li>Short content experiments on Instagram and LinkedIn.</li>
+              <li>Notes on campaigns that work well and why.</li>
+              <li>Regular updates to this portfolio as I learn more.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">Self-initiated work</span>
+              <span class="project-tag">Continuous learning</span>
+            </div>
+            <div class="project-link-row">
+              <a href="#" aria-label="Go to personal content experiments">See examples (coming soon)</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="section" aria-labelledby="resume-title">
+        <div class="section-header">
+          <div>
+            <div class="section-title">CV</div>
+            <p class="section-subtitle">
+              A short overview of my experience and education. You can download the full CV as a PDF.
+            </p>
+          </div>
+          <div class="section-chip">Downloadable PDF</div>
+        </div>
+
+        <div class="resume-layout">
+          <article class="card">
+            <h3>Snapshot</h3>
+            <p>
+              Junior digital marketing specialist with a recent master’s degree and hands-on training in content creation,
+              social media management, SEO, and analytics. Previous experience in childcare has given me patience, reliability,
+              and strong interpersonal skills.
+            </p>
+            <a href="files/cynthia-ndakola-cv.pdf" class="resume-btn" download>
+              <span>Download full CV (PDF)</span>
+            </a>
+            <p class="resume-note">
+              Replace this link with your actual CV file once uploaded to your GitHub repository.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Experience and education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-role">Junior digital marketing specialist (career switch)</div>
+                <div class="timeline-meta">2024–present · focusing on content, social, SEO, and analytics</div>
+                <div class="timeline-bullet">
+                  Student projects and self-initiated work, including campaigns, email flows, and website improvements.
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-role">Master’s in Digital Marketing</div>
+                <div class="timeline-meta">University / programme name · 2023–2025</div>
+                <div class="timeline-bullet">
+                  Modules in strategy, social media, content, SEO, and analytics. Final project focused on [topic].
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-role">Childcare specialist</div>
+                <div class="timeline-meta">Organisation name · 2018–2023</div>
+                <div class="timeline-bullet">
+                  Responsible for children’s daily routines, communication with parents, and coordination with colleagues.
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="extras" class="section" aria-labelledby="extras-title">
+        <div class="section-header">
+          <div>
+            <div class="section-title">Extras</div>
+            <p class="section-subtitle">
+              What interests me, how I stay engaged with marketing, and what I am like to work with.
+            </p>
+          </div>
+          <div class="section-chip">Motivation · Process · Testimonials</div>
+        </div>
+
+        <div class="extras-grid">
+          <article class="card">
+            <h3>Motivation and interests</h3>
+            <p>
+              I am interested in how brands communicate clearly and consistently over time. I like seeing how small changes
+              in wording, visuals, or timing can change the way people react.
+            </p>
+            <p>
+              To keep learning, I follow marketing newsletters, save examples of campaigns I like, and practise by creating
+              my own small content pieces.
+            </p>
+            <ul class="extras-list">
+              <li>Curating a small swipe file of favourite campaigns.</li>
+              <li>Practising content ideas and rewrites for different brands.</li>
+              <li>Experimenting with posts and simple reports.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>What I am like to work with</h3>
+            <p class="quote">
+              “Cynthia is calm, dependable, and takes responsibility for her tasks. She thinks before she reacts and always
+              keeps children and parents informed.”
+            </p>
+            <p class="quote-meta">Former childcare supervisor (paraphrased)</p>
+            <p>
+              As a colleague, I am steady rather than loud. I like to prepare, ask clarifying questions, and then get on with the work.
+              I am happiest when I can support a team, keep things organised, and see progress over time.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="section-header">
+          <div>
+            <div class="section-title">Contact</div>
+            <p class="section-subtitle">
+              If you think I could fit your team or project, feel free to get in touch for a short call or a quick email exchange.
+            </p>
+          </div>
+          <div class="section-chip">Let’s talk</div>
+        </div>
+
+        <div class="contact-layout">
+          <article class="card">
+            <h3>How to reach me</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:your.email@example.com">your.email@example.com</a>
+              </li>
+              <li>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">
+                  linkedin.com/in/your-linkedin
+                </a>
+              </li>
+              <li>
+                <span class="contact-label">Other links</span>
+                <span>Portfolio pieces, blog, or other profiles can go here.</span>
+              </li>
+            </ul>
+            <div class="contact-chip-row">
+              <span class="contact-chip">Available for junior roles</span>
+              <span class="contact-chip">Happy to do a short trial task</span>
+            </div>
+          </article>
+
+          <article class="contact-card" aria-label="Contact form (front-end only)">
+            <p>
+              This is a simple front-end form for demonstration. On GitHub Pages you can either connect it to a form service
+              or replace it with direct email links.
+            </p>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell me about your role or project..."></textarea>
+            <button type="button">Send (demo only)</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <span>© 2025 Cynthia Ndakola. All rights reserved.</span>
+        <span>Built with GitHub Pages.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

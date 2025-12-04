@@ -357,7 +357,6 @@
     .metric {
       display: flex;
       /* justify-content: space-between;*/
-      justify-content: flex-start;
       gap: 0.75rem;
       colour: #bfdbfe;
     }
@@ -1267,9 +1266,13 @@ through collaboration.</li>
 
     <footer>
       <div class="footer-inner">
-        <span>© 2025 Cynthia Ndakola. All rights reserved.</span>
+        <span id="footer-year">© Cynthia Ndakola. All rights reserved.</span>
         <span><a href="imprint.html">Imprint</a></span>
       </div>
+      <script>
+        const year = new Date().getFullYear();
+        document.getElementById('footer-year').textContent = `© ${year} Cynthia Ndakola. All rights reserved.`;
+      </script>
     </footer>
   </div>
 </body>

@@ -905,7 +905,7 @@
 
         <aside class="hero-panel" aria-label="Current availability and snapshot">
           <div class="hero-panel-top">
-            <div class="hero-pill">Availability · Updated 2025</div>
+            <div class="hero-pill">Availability · Updated <span id="header-year"></div>
             <div class="hero-tags">
               <span class="tag">Part-time or full-time</span>
               <span class="tag">Junior level</span>
@@ -1274,6 +1274,7 @@ through collaboration.</li>
       <script>
         const year = new Date().getFullYear();
         document.getElementById('footer-year').textContent = `© ${year} Cynthia Ndakola. All rights reserved.`;
+        document.getElementById('header-year').textContent = `${year}`;
       </script>
     </footer>
   </div>

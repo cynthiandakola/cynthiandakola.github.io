@@ -785,8 +785,11 @@
         grid-template-columns: minmax(0, 1fr);
         padding-top: 1.7rem;
       }
-      .hero-panel {
+      .hero-intro {
         order: -1;
+      }
+      .hero-panel {
+        order: 0;
       }
       .about-grid,
       .projects-grid,

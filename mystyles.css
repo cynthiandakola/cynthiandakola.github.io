@@ -830,3 +830,21 @@
         align-items: flex-start;
       }
     }
+
+
+.role-card {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.role-card .role-text {
+  flex: 1 1 auto;
+}
+
+.role-graphic {
+  align-self: flex-end;     /* pushes it to the lower right of the card */
+  width: 220px;
+  max-width: 40%;
+  border-radius: 16px;
+}

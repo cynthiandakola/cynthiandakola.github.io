@@ -505,6 +505,17 @@
       flex-direction: column;
       gap: 0.7rem;
     }
+    .project-card-broken {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 1.3rem 1.4rem 1.3rem;
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
 
     .project-meta-row {
       display: flex;

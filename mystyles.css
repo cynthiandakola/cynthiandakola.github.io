@@ -884,3 +884,12 @@
     padding: 20px;
     color: white; /* or whatever fits */
 }
+
+.noto {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 800;
+}
+.dancing {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}

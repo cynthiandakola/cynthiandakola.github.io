@@ -848,3 +848,17 @@
   max-width: 40%;
   border-radius: 16px;
 }
+
+.section-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+.icon {
+  width: 45px;
+  height: 45px;
+  opacity: 0.9;
+  margin-left: 12px;
+  flex-shrink: 0;
+}}

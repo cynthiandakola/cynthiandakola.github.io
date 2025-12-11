@@ -861,4 +861,26 @@
   opacity: 0.9;
   margin-left: 12px;
   flex-shrink: 0;
-}}
+}
+
+
+.project-card {
+    display: flex;
+    width: 100%;
+    height: 260px;   /* adjust as needed */
+    overflow: hidden;
+}
+
+.card-image {
+    width: 33.33%;
+    background-image: url('projects/face3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    width: 66.66%;
+    background-color: #9E562C;
+    padding: 20px;
+    color: white; /* or whatever fits */
+}

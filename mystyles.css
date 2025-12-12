@@ -452,6 +452,7 @@
       align-items: flex-start;
     }
 
+
     .card {
       background: var(--bg-alt);
       border-radius: var(--radius-lg);
@@ -473,6 +474,14 @@
       colour: var(--muted);
     }
 
+    .card--white {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.card--white a {
+  color: inherit;
+}
     .pill-list {
       display: flex;
       flex-wrap: wrap;
